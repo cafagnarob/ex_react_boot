@@ -31,7 +31,7 @@ function App() {
           </Row>
         </Container>
       </main>
-      <footer className="bg-dark">
+      <footer className="bg-dark mt-3">
         <BookFooter />
       </footer>
     </>
