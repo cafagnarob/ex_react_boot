@@ -1,16 +1,19 @@
+import BookAlert from "./component/BookAlert"
 import BookCard from "./component/BookCard"
 import BookCardHist from "./component/BookCardHist"
 import BookCardHorror from "./component/BookCardHorror"
 import BookCardRomance from "./component/BookCardRomance"
 import BookCardScifi from "./component/BookCardScifi"
+import BookFooter from "./component/BookFooter"
 import BookNavbar from "./component/BookNavbar"
 import { Container, Row } from "react-bootstrap"
 
 function App() {
   return (
     <>
-      <header>
+      <header className="d-flex flex-column justify-content-center">
         <BookNavbar />
+        <BookAlert />
       </header>
       <main>
         <Container className="mt-3">
@@ -28,7 +31,9 @@ function App() {
           </Row>
         </Container>
       </main>
-      <footer></footer>
+      <footer className="bg-dark">
+        <BookFooter />
+      </footer>
     </>
   )
 }

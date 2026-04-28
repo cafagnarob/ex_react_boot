@@ -4,7 +4,7 @@ import Books from "../assets/books/history.json"
 import { Col } from "react-bootstrap"
 
 const BookCardHist = function () {
-  return Books.slice(0, 4).map((Element) => {
+  return Books.slice(1, 5).map((Element) => {
     return (
       <Col key={Element.asin} className="col-12 col-md-6 col-lg-3">
         <Card className="h-100">
