@@ -24,7 +24,7 @@ function BookAlert() {
 
       {!show && (
         <Button variant="success" onClick={() => setShow(true)}>
-          Fatti un po' di cultura{" "}
+          Ecco un po' di cultura{" "}
         </Button>
       )}
     </>
