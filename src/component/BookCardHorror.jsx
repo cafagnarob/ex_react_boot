@@ -1,9 +1,9 @@
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
-import Books from "../assets/books/fantasy.json"
+import Books from "../assets/books/horror.json"
 import { Col } from "react-bootstrap"
 
-const BookCard = function () {
+const BookCardHorror = function () {
   return Books.slice(0, 4).map((Element) => {
     return (
       <Col key={Element.asin} className="col-12 col-md-6 col-lg-3">
@@ -30,4 +30,4 @@ const BookCard = function () {
   })
 }
 
-export default BookCard
+export default BookCardHorror
